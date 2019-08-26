@@ -16,7 +16,7 @@ class VideoServer extends EventEmitter {
     }
   }
 
-  // 测试webHook
+  // 测试 webHook
   createProcess(source, index, path) {
     const that = this;
     const params = ['-v', '0', '-i', source, '-c', 'copy', '-f', 'hls', '-hls_time', '2.0', '-hls_list_size', '15', '-hls_wrap', '15', path + '/playlist.m3u8'];
